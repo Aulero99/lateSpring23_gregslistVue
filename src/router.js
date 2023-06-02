@@ -12,15 +12,25 @@ const routes = [
     // NOTE instead of mounting views AND controllers here....we mount page components
     component: loadPage('HomePage')
   },
-  {
-    path: '/about',
-    name: 'About',
-    component: loadPage('AboutPage')
-  },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   component: loadPage('AboutPage')
+  // },
   {
     path: '/cars',
     name: 'Cars',
     component: loadPage('CarsPage')
+  },
+  {
+    path: '/houses',
+    name: 'Houses',
+    component: loadPage('HousesPage')
+  },
+  {
+    path: '/jobs',
+    name: 'Jobs',
+    component: loadPage('JobsPage')
   },
   {
     // NOTE we can create unique endpoints through the use of parameters and ':'

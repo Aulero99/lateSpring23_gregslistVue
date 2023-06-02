@@ -8,14 +8,12 @@
       </h1>
     </div>
   </div>
-  <div>
-    <p class="bg-info">Hello from the home page</p>
-  </div>
 
-  <div>
+
+  <!-- <div>
     <h1>{{ number }}</h1>
     <button class="btn btn-warning" @click="incrementNumber()">Increment</button>
-  </div>
+  </div> -->
 
   <div class="p-2">
     <!-- NOTE only render the 'logged in' button IF there is an account -->
@@ -23,7 +21,7 @@
 
     <!-- NOTE this v-bind (shorthand is the ':') says add the disabled attribute if there is no account logged in -->
     <button class="btn btn-success" :disabled="!user.id">Logged In</button>
-    <button class="btn btn-danger" v-if="user.id">Not Logged In</button>
+    <button class="btn btn-danger" :disabled="user.id">Not Logged In</button>
   </div>
 </template>
 
